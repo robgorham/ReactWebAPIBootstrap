@@ -7,6 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactASPWEBAPI Bootstrap", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactASPWEBAPI.Tests", "Time Tracker.Tests\ReactASPWEBAPI.Tests.csproj", "{FDB35361-569F-451B-90DA-FD5E1BB4352F}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "rawapi.ui", "rawapi.ui\", "{476F8BA9-A933-4F31-ACE0-35739B7CC5AD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60365"
+		Debug.AspNetCompiler.PhysicalPath = "rawapi.ui\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60365\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60365"
+		Release.AspNetCompiler.PhysicalPath = "rawapi.ui\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60365\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60365"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +41,10 @@ Global
 		{FDB35361-569F-451B-90DA-FD5E1BB4352F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDB35361-569F-451B-90DA-FD5E1BB4352F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDB35361-569F-451B-90DA-FD5E1BB4352F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476F8BA9-A933-4F31-ACE0-35739B7CC5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476F8BA9-A933-4F31-ACE0-35739B7CC5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476F8BA9-A933-4F31-ACE0-35739B7CC5AD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{476F8BA9-A933-4F31-ACE0-35739B7CC5AD}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

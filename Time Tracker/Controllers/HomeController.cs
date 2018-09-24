@@ -14,5 +14,12 @@ namespace Time_Tracker.Controllers
 
             return View();
         }
+        [Authorize]
+        public ActionResult AuthIndex()
+        {
+            ViewBag.Title = "Authenticated!";
+
+            return View("Index");
+        }
     }
 }
