@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactASPWEBAPI Bootstrap", "Time Tracker\ReactASPWEBAPI Bootstrap.csproj", "{491837AC-E465-4E15-BB71-3834AB48431B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactASPWEBAPI.Tests", "Time Tracker.Tests\ReactASPWEBAPI.Tests.csproj", "{FDB35361-569F-451B-90DA-FD5E1BB4352F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{491837AC-E465-4E15-BB71-3834AB48431B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491837AC-E465-4E15-BB71-3834AB48431B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491837AC-E465-4E15-BB71-3834AB48431B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491837AC-E465-4E15-BB71-3834AB48431B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB35361-569F-451B-90DA-FD5E1BB4352F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB35361-569F-451B-90DA-FD5E1BB4352F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB35361-569F-451B-90DA-FD5E1BB4352F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB35361-569F-451B-90DA-FD5E1BB4352F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14315258-6168-4666-9F0E-04AC8B240FF7}
+	EndGlobalSection
+EndGlobal
