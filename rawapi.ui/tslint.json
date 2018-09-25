@@ -1,6 +1,9 @@
 {
-  "extends":[],
+  "extends": [],
   "defaultSeverity": "warning",
+  "rules": {
+    "no-var-keyword": true
+  },
   "linterOptions": {
     "exclude": [
       "config/**/*.js",
