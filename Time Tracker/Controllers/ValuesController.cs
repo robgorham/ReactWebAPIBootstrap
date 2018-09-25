@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace Time_Tracker.Controllers
 {
-    [Authorize]
+    
     public class ValuesController : ApiController
     {
         // GET api/values
@@ -17,6 +17,7 @@ namespace Time_Tracker.Controllers
         }
 
         // GET api/values/5
+        
         public string Get(int id)
         {
             return "value";
