@@ -1,5 +1,5 @@
 ﻿import * as constants from '../constants';
-import { StoreState } from '../types';
+
 
 //Actions that should eventually be pulled out to their own files based on the container
 
@@ -28,23 +28,24 @@ export function FetchAnonStart(): IFetchAnonStart {
 
 export interface IURLChange {
     type: constants.MYURLCHANGE;
-    payload: string;
+    myUrl: string;
 }
 
 export type URLChangeAction = IURLChange;
 
-export function URLChange(state: StoreState, action: URLChangeAction): StoreState {
+export function URLChange( url:string ): URLChangeAction {
     return {
-        myUrl: action.payload
+        type: constants.MYURLCHANGE,
+        myUrl: url
     };
 }
 
 
 export function getURL(myUrl: string): Promise<any> {
-    const results = fetch(myUrl, { method: 'get', mode:'cors' })
-        .then(function(res) {
+    const results = fetch(myUrl, { method: 'get', mode: 'cors' })
+        .then(function (res) {
             return res;
-        }).catch(function(ex) {
+        }).catch(function (ex) {
             return ex;
         });
 
