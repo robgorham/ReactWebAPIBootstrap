@@ -1,4 +1,44 @@
-﻿//Actions that should eventually be pulled out to their own files based on the container
+﻿import * as constants from '../constants';
+import { StoreState } from '../types';
+
+//Actions that should eventually be pulled out to their own files based on the container
+
+/*#region FetchAnon
+export interface IFetchAnonStart {
+    type: constants.FETCHANONSTART;
+}
+
+export interface IFetchAnonSuccess {
+    type: constants.FETCHANONSUCCESS;
+}
+
+export interface IFetchAnonFail {
+    type: constants.FETCHANONFAIL;
+}
+
+export type FetchAnonAction = IFetchAnonStart | IFetchAnonSuccess | IFetchAnonFail;
+
+export function FetchAnonStart(): IFetchAnonStart {
+    return {
+        type: constants.FETCHANONSTART
+    }
+}
+#endregion
+*/
+
+export interface IURLChange {
+    type: constants.MYURLCHANGE;
+    payload: string;
+}
+
+export type URLChangeAction = IURLChange;
+
+export function URLChange(state: StoreState, action: URLChangeAction): StoreState {
+    return {
+        myUrl: action.payload
+    };
+}
+
 
 export function getURL(myUrl: string): Promise<any> {
     const results = fetch(myUrl, { method: 'get', mode:'cors' })

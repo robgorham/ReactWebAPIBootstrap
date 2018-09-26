@@ -1,6 +1,7 @@
 //TODO move this to the container directory!
 import * as React from 'react';
 import FetchTester from './containers/fetchTester';
+import Config from './containers/Config';
 import Login from './containers/Login';
 import Welcome from './components/Welcome';
 import './App.css';
@@ -38,6 +39,7 @@ class App extends React.Component {
                             <Route path="/FetchTester" component={FetchTester} />
                             <Route path="/Welcome" component={Welcome} />
                             <Route path="/Login" component={Login} />
+                            <Route path="/Config" component={Config} />
                         </Row>
                     </Col>
                 </Row>
