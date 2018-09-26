@@ -1,9 +1,11 @@
 //TODO move this to the container directory!
 import * as React from 'react';
 import FetchTester from './containers/fetchTester';
+import Login from './containers/Login';
+import Welcome from './components/Welcome';
 import './App.css';
-import { Grid, Col, Row, Navbar, Nav, NavItem} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Grid, Col, Row, Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Route } from 'react-router-dom';
 //import logo from './logo.svg';
 
 class App extends React.Component {
@@ -16,17 +18,26 @@ class App extends React.Component {
                         <Row>
                             <Navbar>
                                 <Navbar.Brand>
-                                    <h3> React ASP.NET Boilerplate</h3>
+                                    React ASP.NET Boilerplate
                                 </Navbar.Brand>
                                 <Nav>
-                                    <NavItem>
-                                        <Link to="/FetchTester" >FetchTester</Link>
+                                    <NavItem href="/">
+                                        Home
+                                       </NavItem>
+                                    <NavItem href="/FetchTester">
+                                        FetchTester
+                                    </NavItem>
+                                    <NavItem href="/Login">
+                                        Login
                                     </NavItem>
                                 </Nav>
                             </Navbar>
                         </Row>
-                        <Row>
-                            <FetchTester myUrl="http://localhost:54683/api/GetAnonymous" />
+                        <Row id="content">
+                            <Route exact path="/" component={Welcome} />
+                            <Route path="/FetchTester" component={FetchTester} />
+                            <Route path="/Welcome" component={Welcome} />
+                            <Route path="/Login" component={Login} />
                         </Row>
                     </Col>
                 </Row>
