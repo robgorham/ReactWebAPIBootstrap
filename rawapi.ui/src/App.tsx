@@ -1,8 +1,9 @@
+//TODO move this to the container directory!
 import * as React from 'react';
 import FetchTester from './components/fetchTester';
 import './App.css';
-import { Grid, Col, Row } from 'react-bootstrap';
-import logo from './logo.svg';
+import { Grid, Col, Row, Navbar } from 'react-bootstrap';
+//import logo from './logo.svg';
 
 class App extends React.Component {
     public render() {
@@ -10,15 +11,18 @@ class App extends React.Component {
             <Grid >
                 <Row>
                     <Col md={12}
-                         className="App">
-                        <header className="App-header">
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <h1 className="App-title">Welcome to React</h1>
-                        </header>
-                        <p className="App-intro">
-                            To get started, edit <code>src/App.tsx</code> and save to reload.
-                    </p>
-                        <FetchTester myUrl='localhost:50933' />
+                         className="App container">
+                        <Row>
+                        <Navbar>
+                                <Navbar.Brand>
+                                    <h3> React ASP.NET Boilerplate</h3>
+                                </Navbar.Brand>
+
+                            </Navbar>
+                        </Row>
+                        <Row>
+                            <FetchTester myUrl="http://localhost:54683/api/GetAnonymous" />
+                        </Row>
                     </Col>
                 </Row>
             </Grid>

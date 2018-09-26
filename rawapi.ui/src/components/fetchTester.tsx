@@ -4,17 +4,22 @@ import { getURL } from '../actions';
 export interface Props {
     myUrl: string;
 }
+interface State {
+    myURL: string;
+}
 
-export default class FetchTester extends React.Component<Props, object>{
+export default class FetchTester extends React.Component<Props, State>{
 
     constructor(props: Props) {
         super(props);
+        this.state = { myURL: props.myUrl };
     }
     //sanity test for my fetch requests
     pingme = (): string => {
         console.log('started');
+        console.log(this.state);
         
-        getURL('http://localhost:54683/api/GetAnonymous').then(function(res) {
+        getURL(this.props.myUrl).then(function(res) {
             return res.json();
         }).then(function(json) {
             console.log(json);
