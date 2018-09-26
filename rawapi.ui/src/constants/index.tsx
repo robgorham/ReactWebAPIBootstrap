@@ -1,4 +1,6 @@
-﻿export const FETCHANONSTART = 'FETCHANONSTART';
+﻿//All of the constants that help us with dictating action types
+
+export const FETCHANONSTART = 'FETCHANONSTART';
 export type FETCHANONSTART = typeof FETCHANONSTART;
 
 export const FETCHANONSUCCESS = 'FETCHANONSUCCESS';
