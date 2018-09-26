@@ -5,19 +5,28 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace Time_Tracker.Controllers
+namespace ReactWEBAPI.Controllers
 {
-    
+    [Authorize]
     public class ValuesController : ApiController
     {
-        // GET api/values
+        
+        //Unauthorized Get
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
+        // GET api/values
+        [AllowAnonymous]
+        [Route("api/GetAnonymous")]
+        public IEnumerable<string> GetAnonymous()
+        {
+            return new string[] { "value1", "value2" };
+        }
+
         // GET api/values/5
-        
+
         public string Get(int id)
         {
             return "value";

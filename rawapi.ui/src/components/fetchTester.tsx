@@ -14,7 +14,7 @@ export default class FetchTester extends React.Component<Props, object>{
     pingme = (): string => {
         console.log('started');
         
-        getURL('http://localhost:54683/api/values').then(function(res) {
+        getURL('http://localhost:54683/api/GetAnonymous').then(function(res) {
             return res.json();
         }).then(function(json) {
             console.log(json);
