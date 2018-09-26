@@ -1,8 +1,9 @@
 //TODO move this to the container directory!
 import * as React from 'react';
-import FetchTester from './components/fetchTester';
+import FetchTester from './containers/fetchTester';
 import './App.css';
-import { Grid, Col, Row, Navbar } from 'react-bootstrap';
+import { Grid, Col, Row, Navbar, Nav, NavItem} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 //import logo from './logo.svg';
 
 class App extends React.Component {
@@ -11,13 +12,17 @@ class App extends React.Component {
             <Grid >
                 <Row>
                     <Col md={12}
-                         className="App container">
+                        className="App container">
                         <Row>
-                        <Navbar>
+                            <Navbar>
                                 <Navbar.Brand>
                                     <h3> React ASP.NET Boilerplate</h3>
                                 </Navbar.Brand>
-
+                                <Nav>
+                                    <NavItem>
+                                        <Link to="/FetchTester" >FetchTester</Link>
+                                    </NavItem>
+                                </Nav>
                             </Navbar>
                         </Row>
                         <Row>
