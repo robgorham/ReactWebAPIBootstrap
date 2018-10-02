@@ -1,8 +1,7 @@
 ﻿import * as React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-
-function Welcome() {
+export const Welcome:React.SFC<object> = () => {
     return (<Row>
         <Col md={6} mdOffset={3}>
             <h3>Welcome and Hello!</h3>
