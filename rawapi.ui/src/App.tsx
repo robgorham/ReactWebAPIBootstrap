@@ -31,6 +31,9 @@ class App extends React.Component {
                                     <NavItem href="/Login">
                                         Login
                                     </NavItem>
+                                    <NavItem href="/Config">
+                                        Config
+                                    </NavItem>
                                 </Nav>
                             </Navbar>
                         </Row>
