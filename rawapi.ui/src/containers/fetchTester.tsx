@@ -1,5 +1,5 @@
 ﻿import * as React from 'react';
-import { getURL } from '../actions';
+import { getURL } from '../utils/fetchUtil';
 
 export interface Props {
     myUrl: string;
