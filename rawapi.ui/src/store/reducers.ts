@@ -1,20 +1,24 @@
-﻿import { MYURLCHANGE } from '../constants';
-//import { urlChangeAction } from './actions';
-//import { StoreState } from '../types';
-import { combineReducers, Reducer, AnyAction } from 'redux';
+﻿import { MYURLCHANGE } from "../constants";
+import { DemoActions } from "./actions";
+import { combineReducers, Reducer } from "redux";
 
-export const initialState: string = 'http://localhost:3000';
+/**
+ * root reducer for project
+ * a good refactor would be to make a config folder for the context and combine reducers within that one
+ * and have the reducer here be the root.  Even better so, make the root reducer actually an index.ts
+ */
 
 
-const myUrl:Reducer<string> = (state: string = initialState, action: AnyAction ) => {
-    switch (action.type.toString()) {
+export const initialState: string = "http://localhost:54683/";
+
+
+const myUrl:Reducer<string> = (state: string = initialState, action: DemoActions) => {
+    switch (action.type) {
         case MYURLCHANGE:
-            return Object.assign({}, state,
-                { myUrl: action.payload });
+            return action.payload;
         default:
             return state;
     }
-
 }
 
 const reducers = combineReducers({

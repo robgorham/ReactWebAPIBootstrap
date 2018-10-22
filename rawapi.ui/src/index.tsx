@@ -33,7 +33,7 @@ function configureStore(
 
 const history = createHashHistory();
 
-const store = configureStore(history, { myUrl: 'localhost:777' });
+const store = configureStore(history, {});
 
 ReactDOM.render(<BrowserRouter>
     <Provider store={store}>

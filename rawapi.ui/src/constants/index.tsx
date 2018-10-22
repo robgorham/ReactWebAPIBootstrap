@@ -10,4 +10,4 @@ export const FETCHANONFAIL = 'FETCHANONFAIL';
 export type FETCHANONFAIL = typeof FETCHANONFAIL;
 
 export const MYURLCHANGE:string  = 'MYURLCHANGE';
-//export type MYURLCHANGE = typeof MYURLCHANGE;
+export type MYURLCHANGE = typeof MYURLCHANGE;
